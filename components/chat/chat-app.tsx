@@ -115,9 +115,14 @@ export function ChatApp() {
 
   return (
     <div className="mx-auto flex h-[100dvh] w-full max-w-md flex-col bg-background shadow-xl">
-      <ChatHeader onRestart={start} />
+      <ChatHeader onRestart={start} typing={isTyping} />
 
       <div ref={scrollRef} className="chat-wallpaper no-scrollbar flex-1 space-y-3 overflow-y-auto px-3 py-4">
+        <div className="flex justify-center">
+          <span className="rounded-md bg-card/90 px-3 py-1 text-[11px] font-medium text-muted-foreground shadow-sm">
+            Today
+          </span>
+        </div>
         {messages.map((m) => (
           <ChatMessage
             key={m.id}

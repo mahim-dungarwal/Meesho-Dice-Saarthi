@@ -54,22 +54,22 @@ export function ChatMessage({
           <div
             className={
               isUser
-                ? 'max-w-[80%] rounded-2xl rounded-tr-md bg-user-bubble px-3.5 py-2.5 text-user-bubble-foreground shadow-sm'
-                : 'max-w-[85%] rounded-2xl rounded-tl-md bg-card px-3.5 py-2.5 text-card-foreground shadow-sm'
+                ? 'wa-user-bubble relative max-w-[80%] rounded-lg rounded-tr-none bg-user-bubble px-2.5 py-1.5 text-user-bubble-foreground shadow-sm'
+                : 'wa-bot-bubble relative max-w-[85%] rounded-lg rounded-tl-none bg-card px-2.5 py-1.5 text-card-foreground shadow-sm'
             }
           >
-            <p className="whitespace-pre-line text-[14px] leading-relaxed">{message.text}</p>
+            <p className="whitespace-pre-line pr-10 text-[14px] leading-relaxed">{message.text}</p>
             <div
-              className={`mt-1 flex items-center justify-end gap-1 text-[10px] ${
-                isUser ? 'text-user-bubble-foreground/60' : 'text-muted-foreground'
+              className={`-mt-0.5 flex items-center justify-end gap-1 text-[10px] ${
+                isUser ? 'text-user-bubble-foreground/50' : 'text-muted-foreground'
               }`}
             >
               <span>{message.time}</span>
               {isUser &&
                 (repliesActive ? (
-                  <Check className="h-3 w-3" />
+                  <Check className="h-3.5 w-3.5" />
                 ) : (
-                  <CheckCheck className="h-3 w-3 text-primary" />
+                  <CheckCheck className="h-3.5 w-3.5 text-[#53bdeb]" />
                 ))}
             </div>
           </div>

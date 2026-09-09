@@ -105,14 +105,14 @@ export function SecureOnboarding() {
           </div>
           <h2 className="mt-4 text-xl font-bold text-foreground">Onboarding complete</h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            Your seller account is verified. MEESHO सहायक will now help you choose the right first
+            Your seller account is verified. MEESHO सारथी will now help you choose the right first
             product to launch.
           </p>
           <Link
             href="/?onboarded=1"
             className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
           >
-            Return to Sahayak
+            Return to सारथी
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

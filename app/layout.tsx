@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'MEESHO सहायक — AI Commerce Manager',
+  title: 'MEESHO सारथी — AI Commerce Manager',
   description:
     'A WhatsApp-style AI commerce manager that helps Indian manufacturers start, manage and grow their business on Meesho. Demo prototype.',
   generator: 'v0.app',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#f43397',
+  themeColor: '#075e54',
 }
 
 export default function RootLayout({

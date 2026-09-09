@@ -1,7 +1,7 @@
 import { SecureOnboarding } from '@/components/onboarding/secure-onboarding'
 
 export const metadata = {
-  title: 'Secure Onboarding · MEESHO सहायक',
+  title: 'Secure Onboarding · MEESHO सारथी',
 }
 
 export default function Page() {

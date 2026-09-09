@@ -1,8 +1,8 @@
 export function TypingIndicator() {
   return (
     <div className="flex justify-start">
-      <div className="flex items-center gap-1.5 rounded-2xl rounded-tl-md bg-card px-4 py-3 shadow-sm">
-        <span className="sr-only">MEESHO सहायक is typing</span>
+      <div className="wa-bot-bubble relative flex items-center gap-1.5 rounded-lg rounded-tl-none bg-card px-4 py-3 shadow-sm">
+        <span className="sr-only">MEESHO सारथी is typing</span>
         {[0, 1, 2].map((i) => (
           <span
             key={i}

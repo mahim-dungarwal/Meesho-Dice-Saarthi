@@ -7,12 +7,12 @@ export const MAIN_MENU: QuickReply[] = [
   { id: 'find_price', label: '💰 Find Right Selling Price' },
   { id: 'check_business', label: '📦 Check My Business' },
   { id: 'reduce_rto', label: '🔄 Reduce Returns / RTO' },
-  { id: 'ask_sahayak', label: '💬 Ask Sahayak' },
+  { id: 'ask_sahayak', label: '💬 Ask सारथी' },
 ]
 
 export const WELCOME_TEXT = `नमस्ते ${SELLER_NAME} ji 👋
 
-Main MEESHO सहायक hoon.
+Main MEESHO सारथी hoon.
 
 Meesho par business शुरू करने से लेकर orders grow करने तक, main aapki help karunga.
 
@@ -69,7 +69,7 @@ export function getBotSteps(actionId: string): BotStep[] {
     case 'biz_both':
       return [
         {
-          text: `MEESHO सहायक aapki onboarding mein step-by-step help karega.
+          text: `MEESHO सारथी aapki onboarding mein step-by-step help karega.
 
 Sensitive documents WhatsApp/chat par share karne ki zarurat nahi hai.`,
         },

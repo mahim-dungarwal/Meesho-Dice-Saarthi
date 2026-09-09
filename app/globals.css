@@ -39,6 +39,10 @@
   --color-user-bubble: var(--user-bubble);
   --color-user-bubble-foreground: var(--user-bubble-foreground);
   --color-success: var(--success);
+  --color-wa-header: var(--wa-header);
+  --color-wa-header-foreground: var(--wa-header-foreground);
+  --color-wa-action: var(--wa-action);
+  --color-wa-panel: var(--wa-panel);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -50,8 +54,8 @@
 
 :root {
   color-scheme: light;
-  --background: #eae6df;
-  --foreground: #1f2a30;
+  --background: #efeae2;
+  --foreground: #111b21;
   --card: #ffffff;
   --card-foreground: #1f2a30;
   --popover: #ffffff;
@@ -74,9 +78,13 @@
   --chart-4: #cbd5e1;
   --chart-5: #94a3b8;
   --radius: 0.9rem;
-  --user-bubble: #fbdcec;
-  --user-bubble-foreground: #3f2530;
+  --user-bubble: #d9fdd3;
+  --user-bubble-foreground: #111b21;
   --success: #16a34a;
+  --wa-header: #075e54;
+  --wa-header-foreground: #ffffff;
+  --wa-action: #00a884;
+  --wa-panel: #f0f2f5;
   --sidebar: #ffffff;
   --sidebar-foreground: #1f2a30;
   --sidebar-primary: #f43397;
@@ -170,13 +178,29 @@
 
 @layer utilities {
   .chat-wallpaper {
-    background-color: #efeae4;
-    background-image: radial-gradient(
-        circle at 1px 1px,
-        rgba(244, 51, 151, 0.06) 1px,
-        transparent 0
-      );
-    background-size: 22px 22px;
+    background-color: #efeae2;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='210'%20height='210'%20viewBox='0%200%20210%20210'%3E%3Cg%20fill='none'%20stroke='%23cabfae'%20stroke-width='2'%20opacity='0.5'%3E%3Cpath%20d='M25,45h26v30h-26z'/%3E%3Cpath%20d='M31,45a7,7,0,0,1,14,0'/%3E%3Cpath%20d='M140,48l16,-7l16,7l-16,7z'/%3E%3Cpath%20d='M140,48v18l16,7v-18'/%3E%3Cpath%20d='M172,48v18l-16,7'/%3E%3Cpath%20d='M55,132l4,9l10,1l-8,7l3,10l-9,-6l-9,6l3,-10l-8,-7l10,-1z'/%3E%3Cpath%20d='M138,148h6l4,20h20l4,-13h-25'/%3E%3Ccircle%20cx='148'%20cy='173'%20r='2.5'/%3E%3Ccircle%20cx='165'%20cy='173'%20r='2.5'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 210px 210px;
+  }
+  .wa-bot-bubble::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 9px solid var(--card);
+    border-left: 8px solid transparent;
+  }
+  .wa-user-bubble::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -7px;
+    width: 0;
+    height: 0;
+    border-top: 9px solid var(--user-bubble);
+    border-right: 8px solid transparent;
   }
   .no-scrollbar {
     -ms-overflow-style: none;
