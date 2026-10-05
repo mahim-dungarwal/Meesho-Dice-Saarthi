@@ -1,4 +1,4 @@
-# Meesho Saarthi — AI Commerce Manager
+# Meesho Saarthi
 
 **A conversational companion for manufacturer onboarding and business growth.**
 
